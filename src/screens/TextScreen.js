@@ -12,6 +12,7 @@ const TextScreen = () => {
         value={inputText}
         onChangeText={(val) => setInputText(val)}
       />
+      <Text style={styles.textStyl}>{inputText}</Text>
     </View>
   );
 };
@@ -22,6 +23,10 @@ const styles = StyleSheet.create({
     margin: 15,
     borderColor: "grey",
     borderWidth: 1,
+  },
+  textStyle: {
+    fontSize: 40,
+    margin: 15,
   },
 });
 
